@@ -73,6 +73,8 @@ typedef NS_ENUM(NSUInteger, ONE_S_LOG_LEVEL) {
 // Only use if you passed FALSE to autoRegister
 - (void)registerForPushNotifications;
 
+- (void)disableBadgeClearing:(bool)badgeClearing;
+
 + (void)setLogLevel:(ONE_S_LOG_LEVEL)logLevel visualLevel:(ONE_S_LOG_LEVEL)visualLogLevel;
 
 + (void)setDefaultClient:(OneSignal*)client;

@@ -278,6 +278,10 @@ void onesignal_Log(ONE_S_LOG_LEVEL logLevel, NSString* message) {
     }
 }
 
+- (void)disableBadgeClearing:(bool)badgeClearing {
+    disableBadgeClearing = badgeClearing;
+}
+
 // "registerForRemoteNotifications*" calls didRegisterForRemoteNotificationsWithDeviceToken
 // in the implementation UIApplication(OneSignalPush) below after contacting Apple's server.
 - (void)registerForPushNotifications {
